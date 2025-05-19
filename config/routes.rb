@@ -12,5 +12,5 @@ resources "entries"
 # post("/places/:place_id/entries", { :controller => "entries", :action => "create" })
 
   # Defines the root path route ("/")
-  # get("/", { :controller => "articles", :action => "index" })
+get("/", { :controller => "articles", :action => "index" })
 end
