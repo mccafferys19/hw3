@@ -9,9 +9,9 @@ class EntriesController < ApplicationController
     @entry = Entry.new
     @entry["title"] = params["title"]
     @entry["description"] = params["description"]
-    @entry["occured_on"] = params["occured_on"]
+    @entry["occurred_on"] = params["occurred_on"]
     @entry["place_id"] = params["place_id"]
     @entry.save
-    redirect_to "/places#{params["place_id"]}"
+    redirect_to "/places/#{params["place_id"]}"
   end
 end
